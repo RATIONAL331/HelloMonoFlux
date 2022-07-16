@@ -1,4 +1,4 @@
-package com.example.Sec04.helper;
+package com.example.sec04.helper;
 
 import com.example.util.Util;
 import lombok.Data;

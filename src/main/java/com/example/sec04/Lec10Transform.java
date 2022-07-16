@@ -1,6 +1,6 @@
-package com.example.Sec04;
+package com.example.sec04;
 
-import com.example.Sec04.helper.Person;
+import com.example.sec04.helper.Person;
 import com.example.util.Util;
 import reactor.core.publisher.Flux;
 
