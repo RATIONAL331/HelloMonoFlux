@@ -9,7 +9,7 @@ public class Lec05Delay {
     public static void main(String[] args) {
         Flux.range(1, 100)
             .log()
-            .delayElements(Duration.ofSeconds(1)) // request(32) !!
+            .delayElements(Duration.ofMillis(100)) // request(32) !!
             .subscribe(Util.onNext(), Util.onError(), Util.onComplete());
         /**
          * request(32)
@@ -17,7 +17,7 @@ public class Lec05Delay {
          * ..
          * onNext(32)
          */
-        Util.sleepSeconds(60);
+        Util.sleepSeconds(11);
         /**
          * received: 1
          * received: 2
