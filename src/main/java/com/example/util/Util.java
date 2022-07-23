@@ -24,8 +24,12 @@ public class Util {
     }
 
     public static void sleepSeconds(int second) {
+        sleepMillis(second * 1000);
+    }
+
+    public static void sleepMillis(int millis) {
         try {
-            Thread.sleep(second * 1000);
+            Thread.sleep(millis);
         } catch (InterruptedException e) {
             // ignore
         }
